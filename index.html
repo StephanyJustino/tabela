@@ -1,0 +1,198 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Sistema de notas</title>
+      <link rel="shortcut icon" type="image/x-icon" href="icone.ico">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="estilo.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/Footer-white.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <header id="home">
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  CRUD
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a data-scroll href="#home">Home</a></li>
+                     <li><a data-scroll href="#inserir">Cadastrar</a></li>
+                     <li><a data-scroll href="#ver">Consultar</a></li>
+                     <li><a data-scroll href="#atualizar">Atualizar</a></li>
+                     <li><a data-scroll href="#deletar">Deletar</a></li>
+                     <li><a data-scroll href="#tabela">Tabela</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+        <div class="content">
+            <section id="inserir">
+                <form action="http://stephany-julia-justino.atwebpages.com/novaTabelaPw/inserir.php" name="inserirAluno" method="post" id="formCriar">
+                    <div id="form">
+                        <h1>Formulário</h1>
+                        <hr>
+                        <input type="number" name="matricula" id="matricula" class="matricula" placeholder="Matricula">
+                        <br>
+                        <input type="text" name="nomeAluno" id="nomeAluno" class="nomeAluno" placeholder="Nome">
+                        <br>
+                        <input type="number" name="nota1" id="nota1" class="nota1" placeholder="Digite a primeira nota">
+                        <br>
+                        <input type="number" name="nota2" id="nota2" class="nota2" placeholder="Digite a segunda nota">
+                        <br>
+                        <input type="number" name="nota3" id="nota3" class="nota3" placeholder="Digite a terceira nota">
+                        <br>
+                        
+                        <input type="submit" value="Cadastrar" class="botao" id="inserir">
+                    </div>     
+                </form>
+                <div id="imgfoto"></div>
+            </section>
+            <section id="ver">
+                <div id="infoCons">
+                    <div id="textCon">
+                    <h1>Consultar</h1>
+                    <hr>
+                    <p>Consulte registros anteriores em nosso banco de dados</p>
+                    <input type="button" value="Consultar" class="botao">
+                    </div>
+                </div>
+                <div id="imgCon">
+                    <img src="img/consultar.png" alt="">
+                </div>
+            </section>
+            <section id="atualizar">
+                <form action="" id="formAtualizar">
+                    <div id="inputAtu">
+                        <h1>Atualizar</h1>
+                        <hr>
+                        <input type="number" name="matricula" id="matricula" placeholder="Matricula">
+                        <br>
+                        <input type="text" name="nomeAluno" id="nomeAluno" placeholder="Nome">
+                        <br>
+                        <input type="number" name="nota1" id="nota1" placeholder="Digite a primeira nota">
+                        <br>
+                        <input type="number" name="nota2" id="nota2" placeholder="Digite a segunda nota">
+                        <br>
+                        <input type="number" name="nota3" id="nota3" placeholder="Digite a terceira nota">
+                        <br>
+                        <input type="button" value="Atualizar" class="botao">
+                    </div>
+                    <div id="imgAtu"><img src="img/Update.png" alt=""></div>
+                </form>
+            </section>
+            <section id="deletar">
+                <div id="delete">
+                    <div id="contDel">
+                        <h1>Deletar</h1>
+                        <hr>
+                        <p>Deletar dados de ex-alunos ou qualquer registro </p>
+                        <p></p>
+                        <input type="number" name="matricula" id="matricula" placeholder="Número de matricula">
+                        <br>
+                        <input type="button" value="Deletar" class="botao">
+                    </div> 
+                </div>
+                <div id="imgDel">
+                     <img src="img/deletar.png" alt="">
+                </div>
+            </section>
+            <section id="tabela">
+                <div id="contTabela">
+                    <table id="tabelaAluno">
+                        <tr>
+                            <th>Aluno</th>
+                            <th>Nota1</th>
+                            <th>Nota2</th>
+                            <th>Nota3</th>
+                            <th>Média</th>
+                        </tr>
+                        <tr>
+                            <td>Bianca</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>2</td>    
+                            <td></td>      
+                        </tr>
+                        <tr>
+                            <td>Yan1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td></td>  
+                        </tr>
+                        <tr>
+                            <td>Yan2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td></td>  
+                        </tr>
+                        <tr>
+                            <td>Beatriz</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td></td>  
+                        </tr>
+                        <tr>
+                            <td>Kevin1</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td></td>  
+                        </tr>
+                        <tr>
+                            <td>Kevin2</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td></td>  
+                        </tr>
+                        <tr>
+                            <td>Raphaely</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td></td>  
+                        </tr>
+                    </table>
+                </div>
+                <br>
+            </div>
+            <div id="imgTabela">
+                <img src="img/tabela.png" alt="">
+            </div>
+            </section>
+            <footer id="myFooter">
+                <div class="footer-social">
+                    <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="social-icons"><i class="fa fa-youtube"></i></a>
+                    <a href="#" class="social-icons"><i class="fa fa-twitter"></i></a>
+                </div>
+                <p class="footer-copyright">© 2022 Copyright - Stephany Justino & Raphaely Oliveira</p>
+            </footer>
+        </div>
+        
+   </body>
+   <script src="script.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script src="http://stephany-julia-justino.atwebpages.com/TabelaPw/script.js" type="text/javascript" ></script>
+    <script src="http://stephany-julia-justino.atwebpages.com/TabelaPw/inserirAluno.js" type="text/javascript" ></script> -->
+</html>
