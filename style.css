@@ -12,7 +12,7 @@ body {
 header {
     /* width: 200vw; */
     height: 100vh;
-    background: url(fundo.png) no-repeat;
+    background: url(./img/fundo.png) no-repeat;
      background-size:cover; 
 }
 

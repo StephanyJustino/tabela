@@ -31,7 +31,7 @@
     margin-left: 2vw;
 }
 #foto{
-   background-image: url(Learning-pana.png);
+   background-image: url(./img/Learning-pana.png);
    margin-left:55vw;
    margin-top: -80vh;
    width: 40vw;
@@ -238,7 +238,7 @@ footer{
 }
 
 #myFooter .fa-twitter:hover{
-    color: #00aced;
+    color: hsl(196, 100%, 46%);
 
 }
 
